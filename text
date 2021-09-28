@@ -1,0 +1,174 @@
+const BambooReading3 = ({ navigation }) => {
+    const [sound, setSound] = React.useState();
+  
+    async function s1() {
+      const { sound } = await Audio.Sound.createAsync(
+         require('./audios/Bamboo2/s1.mp3')
+      );
+      await sound.playAsync(); }
+  
+    async function s2() {
+      const { sound } = await Audio.Sound.createAsync(
+         require('./audios/Bamboo2/s2.mp3')
+      );
+      await sound.playAsync(); }
+  
+        async function s3() {
+      const { sound } = await Audio.Sound.createAsync(
+         require('./audios/Bamboo2/s3.mp3')
+      );
+      await sound.playAsync(); }
+  
+    async function s4() {
+      const { sound } = await Audio.Sound.createAsync(
+         require('./audios/Bamboo2/s4.mp3')
+      );
+      await sound.playAsync(); }
+  
+  
+    async function s5() {
+      const { sound } = await Audio.Sound.createAsync(
+         require('./audios/Bamboo2/s5.mp3')
+      );
+      await sound.playAsync(); }
+  
+    async function s6() {
+      const { sound } = await Audio.Sound.createAsync(
+         require('./audios/Bamboo2/s6.mp3')
+      );
+      await sound.playAsync(); }
+  
+      async function s7() {
+        const { sound } = await Audio.Sound.createAsync(
+           require('./audios/Bamboo2/s7.mp3')
+        );
+        await sound.playAsync(); }
+    
+      async function s8() {
+        const { sound } = await Audio.Sound.createAsync(
+           require('./audios/Bamboo2/s8.mp3')
+        );
+        await sound.playAsync(); }
+  
+  
+    const [loaded] = useFonts({
+      Sniglet: require('./images/Sniglet-Regular.ttf'),
+    }); 
+    
+    if (!loaded) {
+      return null;
+    }
+   return (
+                 <ImageBackground
+    source={require('./assets/Readingbg.png')}
+    style={{width:"100%",height:"100%"}}
+    >
+    <View style={{marginLeft:10,marginTop:200}}>
+    <View style={{marginLeft:10,marginTop:-30}}>
+    <Text style={{fontFamily:'Sniglet',fontSize:26,color:'#30c1ff'}}>
+    <Text onPress={s1}>Once a foolish Santal son-in-law,</Text>{'\n'}
+    <Text style={{lineHeight:10,color:'white'}}>...</Text>{'\n'}
+    <Text onPress={s2}>went to his in-law's place.</Text>{'\n'}
+    <Text style={{lineHeight:10,color:'white'}}>...</Text>{'\n'}
+    <Text onPress={s3}>His mother-in-law cooked delicious,</Text>{'\n'}
+    <Text style={{lineHeight:10,color:'white'}}>...</Text>{'\n'}
+    <Text onPress={s4}>dishes for her son-in-law.</Text>{'\n'}
+    <Text style={{lineHeight:10,color:'white'}}>...</Text>{'\n'}
+    <Text onPress={s5}>One of the dishes was a curry made</Text>{'\n'}
+    <Text style={{lineHeight:10,color:'white'}}>...</Text>{'\n'}
+    <Text onPress={s6}>out of bamboo shoot.</Text>{'\n'}
+    <Text style={{lineHeight:10,color:'white'}}>...</Text>{'\n'}
+    <Text onPress={s7}>The son-in-law liked it very much,</Text>{'\n'}
+    <Text style={{lineHeight:10,color:'white'}}>...</Text>{'\n'}
+    <Text onPress={s8}>and asked his mother-in-law,</Text>{'\n'}
+    </Text>
+    </View>
+    </View>
+  <Ionicons name="play-forward-outline" size={36} color="white" style={{marginTop:86,marginLeft:280}} onPress={() => navigation.navigate('BambooReading2')}
+  />
+    </ImageBackground>
+   )
+    }
+    const BambooReading4 = ({ navigation }) => {
+      const [sound, setSound] = React.useState();
+    
+      async function s9() {
+        const { sound } = await Audio.Sound.createAsync(
+           require('./audios/Bamboo2/s9.mp3')
+        );
+        await sound.playAsync(); }
+    
+      async function s10() {
+        const { sound } = await Audio.Sound.createAsync(
+           require('./audios/Bamboo2/s10.mp3')
+        );
+        await sound.playAsync(); }
+    
+          async function s11() {
+        const { sound } = await Audio.Sound.createAsync(
+           require('./audios/Bamboo2/s11.mp3')
+        );
+        await sound.playAsync(); }
+    
+      async function s12() {
+        const { sound } = await Audio.Sound.createAsync(
+           require('./audios/Bamboo2/s12.mp3')
+        );
+        await sound.playAsync(); }
+    
+    
+      async function s13() {
+        const { sound } = await Audio.Sound.createAsync(
+           require('./audios/Bamboo2/s13.mp3')
+        );
+        await sound.playAsync(); }
+    
+      async function s14() {
+        const { sound } = await Audio.Sound.createAsync(
+           require('./audios/Bamboo2/s14.mp3')
+        );
+        await sound.playAsync(); }
+    
+        async function s15() {
+          const { sound } = await Audio.Sound.createAsync(
+             require('./audios/Bamboo2/s15.mp3')
+          );
+          await sound.playAsync(); }
+    
+    
+      const [loaded] = useFonts({
+        Sniglet: require('./images/Sniglet-Regular.ttf'),
+      }); 
+      
+      if (!loaded) {
+        return null;
+      }
+     return (
+                   <ImageBackground
+      source={require('./assets/Readingbg.png')}
+      style={{width:"100%",height:"100%"}}
+      >
+      <View style={{marginLeft:10,marginTop:200}}>
+      <View style={{marginLeft:10,marginTop:-30}}>
+      <Text style={{fontFamily:'Sniglet',fontSize:26,color:'#30c1ff'}}>
+      <Text onPress={s9}>"Mother, the curry is extremely delicious.</Text>{'\n'}
+      <Text style={{lineHeight:10,color:'white'}}>...</Text>{'\n'}
+      <Text onPress={s10}>What is the curry made from ?"</Text>{'\n'}
+      <Text style={{lineHeight:10,color:'white'}}>...</Text>{'\n'}
+      <Text onPress={s11}>Instead of answering his question, she</Text>{'\n'}
+      <Text style={{lineHeight:10,color:'white'}}>...</Text>{'\n'}
+      <Text onPress={s12}>pointed at the Bamboo2 door.</Text>{'\n'}
+      <Text style={{lineHeight:10,color:'white'}}>...</Text>{'\n'}
+      <Text onPress={s13}>The son-in-law asked, "Is it from Bamboo2?"</Text>{'\n'}
+      <Text style={{lineHeight:10,color:'white'}}>...</Text>{'\n'}
+      <Text onPress={s14}>Yes son, the curry is made from Bamboo2 and,</Text>{'\n'}
+      <Text style={{lineHeight:10,color:'white'}}>...</Text>{'\n'}
+      <Text onPress={s15}>therefore it is called "Bamboo2 Curry".</Text>{'\n'}
+      </Text>
+      </View>
+      </View>
+    <Ionicons name="play-forward-outline" size={36} color="white" style={{marginTop:65,marginLeft:280}} onPress={() => navigation.navigate('Bamboo2Reading2')}
+    />
+      </ImageBackground>
+     )
+      }
